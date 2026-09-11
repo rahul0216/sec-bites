@@ -1,3 +1,10 @@
+- title: BlueMoon Exploit Kit Threat Research and Hunting Hypotheses
+  description: Evidence-based analysis of BlueMoon exploitation, campaigns, vulnerabilities, evasion methods, indicators, ATT&CK mappings, and detection opportunities.
+  category: Exploit kit
+  date: 2026-09-11
+  read_time: 15
+  url: /docs/bluemoon-exploit-kit/BlueMoon-Exploit-Kit-Threat-Research.html
+
 - title: EvilTokens Phishing Kit Threat Research and Hunting Hypotheses
   description: Evidence-based analysis of EvilTokens device-code phishing, campaigns, evasion, ATT&CK mappings, and detection opportunities.
   category: Phishing kit
