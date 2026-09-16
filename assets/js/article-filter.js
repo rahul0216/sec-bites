@@ -4,13 +4,13 @@
 
   if (!tools || cards.length === 0) return;
 
-  const buttons = [...tools.querySelectorAll("[data-category]")];
+  const categoryFilter = tools.querySelector("#category-filter");
   const search = tools.querySelector("#article-search");
   const count = document.querySelector("#research-count");
   const emptyResults = document.querySelector(".empty-results");
-  let activeCategory = "all";
 
   const updateResults = () => {
+    const activeCategory = categoryFilter.value;
     const query = search.value.trim().toLowerCase();
     let visibleCount = 0;
 
@@ -27,18 +27,7 @@
     emptyResults.hidden = visibleCount !== 0;
   };
 
-  buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-      activeCategory = button.dataset.category;
-      buttons.forEach((item) => {
-        const isActive = item === button;
-        item.classList.toggle("is-active", isActive);
-        item.setAttribute("aria-pressed", isActive);
-      });
-      updateResults();
-    });
-  });
-
+  categoryFilter.addEventListener("change", updateResults);
   search.addEventListener("input", updateResults);
   tools.hidden = false;
 })();

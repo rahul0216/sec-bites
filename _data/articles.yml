@@ -1,3 +1,10 @@
+- title: ShinyHunters Hacker Group Hunting Research
+  description: Behavior-focused analysis of ShinyHunters data theft, SaaS abuse, extortion, indicators, and hunting hypotheses for Microsoft Defender XDR and Sentinel.
+  category: Threat actor
+  date: 2026-09-17
+  read_time: 23
+  url: /docs/shiny-hunters-hacker-group/ShinyHunters-Hacker-Group-Hunting-Research.html
+
 - title: BlueMoon Exploit Kit Threat Research and Hunting Hypotheses
   description: Evidence-based analysis of BlueMoon exploitation, campaigns, vulnerabilities, evasion methods, indicators, ATT&CK mappings, and detection opportunities.
   category: Exploit kit
