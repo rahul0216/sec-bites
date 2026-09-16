@@ -20,12 +20,15 @@ description: Independent threat research and practical hunting guidance for secu
 
     {% assign categories = site.data.articles | map: "category" | uniq | sort %}
     <div class="research-tools" hidden>
-      <div class="category-filter" role="group" aria-label="Filter reports by category">
-        <button class="filter-button is-active" type="button" data-category="all" aria-pressed="true">All</button>
+      <label class="category-field">
+        <span class="visually-hidden">Filter reports by category</span>
+        <select id="category-filter">
+          <option value="all">All categories</option>
         {% for category in categories %}
-          <button class="filter-button" type="button" data-category="{{ category | slugify }}" aria-pressed="false">{{ category }}</button>
+          <option value="{{ category | slugify }}">{{ category }}</option>
         {% endfor %}
-      </div>
+        </select>
+      </label>
       <label class="search-field">
         <span class="visually-hidden">Search reports</span>
         <input id="article-search" type="search" placeholder="Search reports" autocomplete="off">

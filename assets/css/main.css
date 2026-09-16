@@ -224,29 +224,32 @@ a {
   display: none;
 }
 
-.category-filter {
-  display: flex;
-  gap: 0.4rem;
-  overflow-x: auto;
-  padding-bottom: 0.15rem;
+.category-field {
+  flex: 0 1 280px;
 }
 
-.filter-button {
-  flex: 0 0 auto;
-  padding: 0.45rem 0.7rem;
-  border: 1px solid transparent;
+.category-field select {
+  width: 100%;
+  padding: 0.55rem 2rem 0.55rem 0;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
   color: var(--muted);
   background: transparent;
   font: inherit;
-  font-size: 0.76rem;
+  font-size: 0.82rem;
   cursor: pointer;
 }
 
-.filter-button:hover,
-.filter-button:focus-visible,
-.filter-button.is-active {
+.category-field select:hover,
+.category-field select:focus {
   color: var(--text);
-  border-color: var(--line);
+  border-color: var(--accent);
+  outline: 0;
+}
+
+.category-field option {
+  color: var(--text);
   background: var(--surface);
 }
 
@@ -635,6 +638,10 @@ a {
   }
 
   .search-field {
+    flex-basis: auto;
+  }
+
+  .category-field {
     flex-basis: auto;
   }
 
