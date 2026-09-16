@@ -21,7 +21,7 @@ description: Independent threat research and practical hunting guidance for secu
     {% assign categories = site.data.articles | map: "category" | uniq | sort %}
     <div class="research-tools" hidden>
       <label class="category-field">
-        <span class="visually-hidden">Filter reports by category</span>
+        <span class="filter-label">Category</span>
         <select id="category-filter">
           <option value="all">All categories</option>
         {% for category in categories %}
@@ -30,8 +30,8 @@ description: Independent threat research and practical hunting guidance for secu
         </select>
       </label>
       <label class="search-field">
-        <span class="visually-hidden">Search reports</span>
-        <input id="article-search" type="search" placeholder="Search reports" autocomplete="off">
+        <span class="filter-label">Keywords</span>
+        <input id="article-search" type="search" placeholder="Search title, topic, or technique" autocomplete="off">
       </label>
     </div>
 

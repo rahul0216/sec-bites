@@ -321,7 +321,3 @@ An example evidence score for prototyping is: unexpected support contact `+2`, n
 * [US Department of Justice: French Computer Hacker Sentenced to Three Years in Prison](https://www.justice.gov/usao-wdwa/pr/french-computer-hacker-sentenced-three-years-prison)
 * [WIRED: ShinyHunters Is a Hacking Group on a Data Breach Spree](https://www.wired.com/story/shinyhunters-hacking-group-data-breach-spree/)
 * [Unit 42: The Golden Scale, Bling Libra and the Evolving Extortion Economy](https://unit42.paloaltonetworks.com/scattered-lapsus-hunters/)
-
-## Implementation Next Step
-
-Convert hypotheses H1 through H13 into versioned Microsoft Defender XDR and Sentinel hunting queries. First validate Salesforce licensing, event availability, connector field mappings, identity normalization, approved-app inventories, and help-desk integration. Then test expected matches, false-positive rates, retention, cross-SaaS windows, and analyst response paths before promoting any query to a detection rule.
