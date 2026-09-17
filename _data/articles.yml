@@ -1,3 +1,10 @@
+- title: Scattered Spider Threat Group Research and Hunting Hypotheses
+  description: Evidence-based profile of Scattered Spider, its identity-led attack flow, campaigns, tools, indicators, and detection opportunities.
+  category: Threat actor
+  date: 2026-09-18
+  read_time: 20
+  url: /docs/scattered-spider-threat-group/Scattered-Spider-Threat-Group-Research.html
+
 - title: ShinyHunters Hacker Group Hunting Research
   description: Behavior-focused analysis of ShinyHunters data theft, SaaS abuse, extortion, indicators, and hunting hypotheses for Microsoft Defender XDR and Sentinel.
   category: Threat actor
