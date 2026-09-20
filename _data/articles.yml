@@ -1,3 +1,10 @@
+- title: "Plugin4Shell: When a Pinned Plugin Is Not the Code That Runs"
+  description: How commit-pinning failures exposed four AI coding agents to silent plugin substitution, and what defenders should do next.
+  category: Vulnerability
+  date: 2026-09-20
+  read_time: 8
+  url: /docs/plugin4shell-vulnerability-report/Plugin4Shell-Commit-Pinning-Supply-Chain-Risk.html
+
 - title: Scattered Spider Threat Group Research and Hunting Hypotheses
   description: Evidence-based profile of Scattered Spider, its identity-led attack flow, campaigns, tools, indicators, and detection opportunities.
   category: Threat actor
