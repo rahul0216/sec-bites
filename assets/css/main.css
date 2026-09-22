@@ -310,7 +310,7 @@ a {
 
 .article-list {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 1rem;
   padding-top: 1rem;
 }
@@ -381,6 +381,57 @@ a {
   margin: 0;
   padding: 4rem 0;
   border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  text-align: center;
+}
+
+.pagination,
+.pagination-pages {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.pagination {
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.pagination[hidden] {
+  display: none;
+}
+
+.pagination button {
+  min-width: 2.4rem;
+  min-height: 2.4rem;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--line);
+  color: var(--text);
+  background: var(--surface);
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.pagination button:hover:not(:disabled),
+.pagination button:focus-visible,
+.pagination button.is-current {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.pagination button.is-current {
+  font-weight: 700;
+}
+
+.pagination button:disabled {
+  color: var(--muted);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pagination-ellipsis {
+  min-width: 1.5rem;
   color: var(--muted);
   text-align: center;
 }
