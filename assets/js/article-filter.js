@@ -12,7 +12,7 @@
   const paginationPages = pagination.querySelector(".pagination-pages");
   const previousButton = pagination.querySelector(".pagination-previous");
   const nextButton = pagination.querySelector(".pagination-next");
-  const pageSize = 10;
+  const pageSize = 6;
   let currentPage = 1;
 
   const getPageNumbers = (pageCount) => {
