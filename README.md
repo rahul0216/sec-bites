@@ -1,6 +1,6 @@
 ---
 title: Sec Bites
-description: Evidence-backed threat research and practical hunting guidance for security teams
+description: Evidence-backed threat and vulnerability research and practical hunting guidance for security teams
 ---
 
 Sec Bites is a Jekyll-powered GitHub Pages site for independent research into
