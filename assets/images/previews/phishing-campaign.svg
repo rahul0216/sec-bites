@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title">
+  <title id="title">Abstract phishing campaign signals</title>
+  <rect width="640" height="360" fill="#372944"/>
+  <g fill="none" stroke="#d8a7ca" stroke-width="3" opacity=".8"><circle cx="470" cy="180" r="120"/><circle cx="470" cy="180" r="78"/><circle cx="470" cy="180" r="37"/><path d="M350 180H590M470 60v240"/></g>
+  <path d="m470 180-96-72" stroke="#f4d35e" stroke-width="8"/><circle cx="374" cy="108" r="13" fill="#f4d35e"/>
+  <path d="M62 238h224v64H62z" fill="#f4efe8"/><path d="m62 238 112 72 112-72" fill="none" stroke="#372944" stroke-width="4"/>
+  <text x="42" y="58" fill="#fff" font-family="Georgia,serif" font-size="26">PHISHING CAMPAIGN</text>
+  <text x="44" y="84" fill="#d8a7ca" font-family="monospace" font-size="12" letter-spacing="3">SIGNAL CLUSTER</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title">
+  <title id="title">Abstract threat actor network</title>
+  <rect width="640" height="360" fill="#13262f"/>
+  <path d="M0 278 165 118l116 83L425 54l215 138v168H0Z" fill="#214a52"/>
+  <g fill="none" stroke="#8bc4b8" stroke-width="2" opacity=".75">
+    <path d="m91 265 132-120 104 62 151-112 91 95M223 145l-18 137m122-75 32 97m119-209 36 151"/>
+    <circle cx="91" cy="265" r="14"/><circle cx="223" cy="145" r="18"/><circle cx="327" cy="207" r="12"/><circle cx="478" cy="95" r="22"/><circle cx="569" cy="190" r="14"/>
+  </g>
+  <circle cx="478" cy="95" r="7" fill="#f0b35a"/>
+  <text x="42" y="58" fill="#fff" font-family="Georgia,serif" font-size="26">THREAT ACTOR</text>
+  <text x="44" y="84" fill="#8bc4b8" font-family="monospace" font-size="12" letter-spacing="3">ACTIVITY NETWORK</text>
+</svg>
