@@ -1,8 +1,17 @@
+- title: Zirconium and Violet Typhoon Threat Actor Hunting Research
+  description: Evidence-based analysis of Zirconium target profiles, attack flows, ATT&CK techniques, tools, indicators, and hunting hypotheses.
+  category: Threat actor
+  date: 2026-09-25
+  read_time: 15
+  image: /assets/images/previews/threat-actor.svg
+  url: /docs/zirconium-threat-group/Zirconium-Threat-Actor-Hunting-Research.html
+
 - title: "Not-a-Mused: How a Local Flaw Can Turn Meta's Muse Agent Against Its User"
   description: Analysis of a local Muse client flaw that enables dictation interception, prompt replacement, bearer-token theft, and access to delegated agent capabilities.
   category: Vulnerability
   date: 2026-09-22
   read_time: 9
+  image: /assets/images/previews/vulnerability.svg
   url: /docs/not-a-mused-0day-vulnerability-report/Meta-Muse-Not-a-Mused-Zero-Day-Analysis.html
 
 - title: "Plugin4Shell: When a Pinned Plugin Is Not the Code That Runs"
@@ -10,6 +19,7 @@
   category: Vulnerability
   date: 2026-09-20
   read_time: 8
+  image: /assets/images/previews/vulnerability.svg
   url: /docs/plugin4shell-vulnerability-report/Plugin4Shell-Commit-Pinning-Supply-Chain-Risk.html
 
 - title: Scattered Spider Threat Group Research and Hunting Hypotheses
@@ -17,6 +27,7 @@
   category: Threat actor
   date: 2026-09-18
   read_time: 20
+  image: /assets/images/previews/threat-actor.svg
   url: /docs/scattered-spider-threat-group/Scattered-Spider-Threat-Group-Research.html
 
 - title: ShinyHunters Hacker Group Hunting Research
@@ -24,6 +35,7 @@
   category: Threat actor
   date: 2026-09-17
   read_time: 23
+  image: /assets/images/previews/threat-actor.svg
   url: /docs/shiny-hunters-hacker-group/ShinyHunters-Hacker-Group-Hunting-Research.html
 
 - title: BlueMoon Exploit Kit Threat Research and Hunting Hypotheses
@@ -31,6 +43,7 @@
   category: Exploit kit
   date: 2026-09-11
   read_time: 15
+  image: /assets/images/previews/exploit-kit.svg
   url: /docs/bluemoon-exploit-kit/BlueMoon-Exploit-Kit-Threat-Research.html
 
 - title: EvilTokens Phishing Kit Threat Research and Hunting Hypotheses
@@ -38,6 +51,7 @@
   category: Phishing kit
   date: 2026-09-07
   read_time: 16
+  image: /assets/images/previews/phishing-kit.svg
   url: /docs/eviltokens-phishing-kit/EvilTokens-Phishing-Kit-Threat-Research.html
 
 - title: Shai-Hulud Software Supply-Chain Campaign Threat Research
@@ -45,6 +59,7 @@
   category: Supply-chain campaign
   date: 2026-09-04
   read_time: 18
+  image: /assets/images/previews/supply-chain.svg
   url: /docs/shai-hulud-campaign/Shai-Hulud-Supply-Chain-Campaign-Threat-Research.html
 
 - title: NovaCookies Campaign Analysis and Threat Hunting Research
@@ -52,6 +67,7 @@
   category: Phishing campaign
   date: 2026-09-02
   read_time: 12
+  image: /assets/images/previews/phishing-campaign.svg
   url: /docs/novacookies-campaign/NovaCookies-Campaign-Hunting-Research.html
 
 - title: Mimikatz Threat Research and Detection Hypotheses
@@ -59,6 +75,7 @@
   category: Adversary tooling
   date: 2026-09-01
   read_time: 25
+  image: /assets/images/previews/adversary-tooling.svg
   url: /docs/mimikatz-tool/Mimikatz-Threat-Research-and-Detection-Hypotheses.html
 
 - title: DeadLock Ransomware Threat Hunting Research
@@ -66,6 +83,7 @@
   category: Ransomware
   date: 2026-08-27
   read_time: 23
+  image: /assets/images/previews/ransomware.svg
   url: /docs/deadlock-ransomware/DeadLock-Ransomware-Hunting-Research.html
 
 - title: Medusa Ransomware Threat Hunting Research
@@ -73,6 +91,7 @@
   category: Ransomware
   date: 2026-08-24
   read_time: 22
+  image: /assets/images/previews/ransomware.svg
   url: /docs/medusa-ransomware/Medusa-Ransomware-Hunting-Research.html
 
 - title: Transparent Tribe APT36 Threat Actor Hunting Research
@@ -80,6 +99,7 @@
   category: Threat actor
   date: 2026-08-15
   read_time: 22
+  image: /assets/images/previews/threat-actor.svg
   url: /docs/trasparent-tribe-threat-actor/Transparent-Tribe-APT36-Hunting-Research.html
 
 - title: Gentlemen Ransomware-as-a-Service Threat Research
@@ -87,6 +107,7 @@
   category: Ransomware
   date: 2026-08-01
   read_time: 24
+  image: /assets/images/previews/ransomware.svg
   url: /docs/gentlemen-raas/Gentlemen-Ransomware-Hunting-Research.html
 
 - title: Cobalt Strike Threat Hunting Research
@@ -94,6 +115,7 @@
   category: Adversary tooling
   date: 2026-07-25
   read_time: 28
+  image: /assets/images/previews/adversary-tooling.svg
   url: /docs/cobat-strike-tool/Cobalt-Strike-Threat-Hunting-Research.html
 
 - title: Lazarus Group Threat Actor Hunting Research
@@ -101,6 +123,7 @@
   category: Threat actor
   date: 2026-06-08
   read_time: 24
+  image: /assets/images/previews/threat-actor.svg
   url: /docs/lazarus-group-threat-actor/Lazarus-Group-Hunting-Research.html
 
 - title: GlassWorm Campaign Threat Research and Hunting Hypotheses
@@ -108,4 +131,5 @@
   category: Supply-chain campaign
   date: 2026-02-08
   read_time: 20
+  image: /assets/images/previews/supply-chain.svg
   url: /docs/glassworm-campaign/GlassWorm-Campaign-Threat-Research.html

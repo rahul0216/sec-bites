@@ -39,14 +39,21 @@ description: Independent threat research and practical hunting guidance for secu
       {% for article in site.data.articles %}
         <article class="article-card" data-category="{{ article.category | slugify }}" data-search="{{ article.title | append: ' ' | append: article.description | append: ' ' | append: article.category | downcase | escape }}">
           <a href="{{ article.url | relative_url }}" aria-label="Read {{ article.title }}">
-            <div class="article-meta">
-              <span>{{ article.category }}</span>
-              <time datetime="{{ article.date | date: '%Y-%m-%d' }}">{{ article.date | date: "%d %b %Y" }}</time>
-              <span>{{ article.read_time }} min read</span>
+            {% if article.image %}
+              <div class="article-preview" aria-hidden="true">
+                <img src="{{ article.image | relative_url }}" alt="" loading="lazy" width="640" height="360">
+              </div>
+            {% endif %}
+            <div class="article-card-content">
+              <div class="article-meta">
+                <span>{{ article.category }}</span>
+                <time datetime="{{ article.date | date: '%Y-%m-%d' }}">{{ article.date | date: "%d %b %Y" }}</time>
+                <span>{{ article.read_time }} min read</span>
+              </div>
+              <h3>{{ article.title }}</h3>
+              <p>{{ article.description }}</p>
+              <span class="read-link">Read report <span aria-hidden="true">&rarr;</span></span>
             </div>
-            <h3>{{ article.title }}</h3>
-            <p>{{ article.description }}</p>
-            <span class="read-link">Read report <span aria-hidden="true">&rarr;</span></span>
           </a>
         </article>
       {% endfor %}
