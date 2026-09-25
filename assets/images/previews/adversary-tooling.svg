@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title">
-  <title id="title">Abstract adversary command console</title>
-  <rect width="640" height="360" fill="#171917"/>
-  <rect x="60" y="72" width="520" height="232" rx="4" fill="#232923" stroke="#91b787" stroke-width="3"/>
-  <circle cx="88" cy="98" r="6" fill="#e06c5f"/><circle cx="108" cy="98" r="6" fill="#e5c060"/><circle cx="128" cy="98" r="6" fill="#91b787"/>
-  <g fill="#91b787"><rect x="91" y="139" width="180" height="7"/><rect x="91" y="169" width="332" height="7" opacity=".55"/><rect x="91" y="199" width="258" height="7" opacity=".75"/><rect x="91" y="229" width="385" height="7" opacity=".4"/></g>
-  <rect x="91" y="259" width="16" height="24" fill="#e5c060"/>
-  <text x="42" y="48" fill="#fff" font-family="Georgia,serif" font-size="26">ADVERSARY TOOLING</text>
-</svg>
