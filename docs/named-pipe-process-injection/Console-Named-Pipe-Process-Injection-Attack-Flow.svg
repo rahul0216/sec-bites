@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Console Named-Pipe Process Injection Attack Flow</title>
+  <desc id="desc">Eight-stage attack flow showing pipe creation, console child launch, payload delivery, memory discovery, executable page protection, thread hijacking, and defender visibility.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#34495e"/>
+    </marker>
+    <marker id="arrowDashed" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5c6770"/>
+    </marker>
+    <style>
+      .title { font: 700 36px 'Segoe UI', sans-serif; fill: #102a43; }
+      .subtitle { font: 400 18px 'Segoe UI', sans-serif; fill: #486581; }
+      .phase { font: 700 18px 'Segoe UI', sans-serif; fill: #334e68; letter-spacing: 1px; }
+      .node-title { font: 700 18px 'Segoe UI', sans-serif; fill: #102a43; }
+      .node-body { font: 400 15px 'Segoe UI', sans-serif; fill: #334e68; }
+      .badge { font: 700 13px 'Segoe UI', sans-serif; fill: #ffffff; }
+      .signal-title { font: 700 16px 'Segoe UI', sans-serif; fill: #183c20; }
+      .signal-body { font: 400 14px 'Segoe UI', sans-serif; fill: #2f5d3a; }
+      .note { font: 400 14px 'Segoe UI', sans-serif; fill: #52606d; }
+      .number { font: 700 16px 'Segoe UI', sans-serif; fill: #ffffff; }
+      .solid { fill: none; stroke: #34495e; stroke-width: 3; marker-end: url(#arrow); }
+      .dashed { fill: none; stroke: #5c6770; stroke-width: 2; stroke-dasharray: 8 7; marker-end: url(#arrowDashed); }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="#f8fafc"/>
+  <rect x="0" y="0" width="1600" height="12" fill="#245a8d"/>
+
+  <text x="70" y="70" class="title">Console Named-Pipe Process Injection</text>
+  <text x="70" y="105" class="subtitle">Payload delivery avoids VirtualAllocEx and WriteProcessMemory, but memory and control-flow manipulation remain visible.</text>
+
+  <rect x="70" y="145" width="462" height="46" rx="6" fill="#dceeff" stroke="#245a8d" stroke-width="2"/>
+  <rect x="569" y="145" width="462" height="46" rx="6" fill="#edf7e8" stroke="#67a84b" stroke-width="2"/>
+  <rect x="1068" y="145" width="462" height="46" rx="6" fill="#fff0ed" stroke="#d95b4b" stroke-width="2"/>
+  <text x="301" y="175" text-anchor="middle" class="phase">1. SETUP AND DELIVERY</text>
+  <text x="800" y="175" text-anchor="middle" class="phase">2. PAYLOAD DISCOVERY</text>
+  <text x="1299" y="175" text-anchor="middle" class="phase">3. EXECUTION HIJACKING</text>
+
+  <g id="node1">
+    <rect x="70" y="230" width="205" height="150" rx="8" fill="#ffffff" stroke="#245a8d" stroke-width="2"/>
+    <circle cx="96" cy="256" r="17" fill="#245a8d"/>
+    <text x="96" y="262" text-anchor="middle" class="number">1</text>
+    <text x="104" y="304" class="node-title">Create pipe</text>
+    <text x="104" y="332" class="node-body">Create inheritable read</text>
+    <text x="104" y="353" class="node-body">and write handles</text>
+  </g>
+
+  <g id="node2">
+    <rect x="327" y="230" width="205" height="150" rx="8" fill="#ffffff" stroke="#245a8d" stroke-width="2"/>
+    <circle cx="353" cy="256" r="17" fill="#245a8d"/>
+    <text x="353" y="262" text-anchor="middle" class="number">2</text>
+    <text x="361" y="304" class="node-title">Launch child</text>
+    <text x="361" y="332" class="node-body">Redirect hStdInput to</text>
+    <text x="361" y="353" class="node-body">the pipe read handle</text>
+  </g>
+
+  <g id="node3">
+    <rect x="70" y="430" width="205" height="150" rx="8" fill="#ffffff" stroke="#245a8d" stroke-width="2"/>
+    <circle cx="96" cy="456" r="17" fill="#245a8d"/>
+    <text x="96" y="462" text-anchor="middle" class="number">3</text>
+    <text x="104" y="504" class="node-title">Send payload</text>
+    <text x="104" y="532" class="node-body">Write marker and bytes</text>
+    <text x="104" y="553" class="node-body">through WriteFile</text>
+  </g>
+
+  <g id="node4">
+    <rect x="569" y="230" width="205" height="150" rx="8" fill="#ffffff" stroke="#67a84b" stroke-width="2"/>
+    <circle cx="595" cy="256" r="17" fill="#4c8c36"/>
+    <text x="595" y="262" text-anchor="middle" class="number">4</text>
+    <text x="603" y="304" class="node-title">Store input</text>
+    <text x="603" y="332" class="node-body">Console child retains bytes</text>
+    <text x="603" y="353" class="node-body">in its own memory</text>
+  </g>
+
+  <g id="node5">
+    <rect x="826" y="230" width="205" height="150" rx="8" fill="#ffffff" stroke="#67a84b" stroke-width="2"/>
+    <circle cx="852" cy="256" r="17" fill="#4c8c36"/>
+    <text x="852" y="262" text-anchor="middle" class="number">5</text>
+    <text x="860" y="304" class="node-title">Locate marker</text>
+    <text x="860" y="332" class="node-body">Scan accessible child</text>
+    <text x="860" y="353" class="node-body">memory for the payload</text>
+  </g>
+
+  <g id="node6">
+    <rect x="1068" y="230" width="205" height="150" rx="8" fill="#ffffff" stroke="#d95b4b" stroke-width="2"/>
+    <circle cx="1094" cy="256" r="17" fill="#c84637"/>
+    <text x="1094" y="262" text-anchor="middle" class="number">6</text>
+    <text x="1102" y="304" class="node-title">Make executable</text>
+    <text x="1102" y="332" class="node-body">Use VirtualProtectEx on</text>
+    <text x="1102" y="353" class="node-body">the existing pages</text>
+  </g>
+
+  <g id="node7">
+    <rect x="1325" y="230" width="205" height="150" rx="8" fill="#ffffff" stroke="#d95b4b" stroke-width="2"/>
+    <circle cx="1351" cy="256" r="17" fill="#c84637"/>
+    <text x="1351" y="262" text-anchor="middle" class="number">7</text>
+    <text x="1359" y="304" class="node-title">Hijack thread</text>
+    <text x="1359" y="332" class="node-body">Set instruction pointer</text>
+    <text x="1359" y="353" class="node-body">to the payload address</text>
+  </g>
+
+  <g id="node8">
+    <rect x="1325" y="430" width="205" height="150" rx="8" fill="#ffe3e3" stroke="#9b2c2c" stroke-width="3"/>
+    <circle cx="1351" cy="456" r="17" fill="#9b2c2c"/>
+    <text x="1351" y="462" text-anchor="middle" class="number">8</text>
+    <text x="1359" y="504" class="node-title">Execute payload</text>
+    <text x="1359" y="532" class="node-body">Resume existing thread</text>
+    <rect x="1359" y="548" width="142" height="23" rx="11" fill="#9b2c2c"/>
+    <text x="1430" y="564" text-anchor="middle" class="badge">ATT&amp;CK T1055.003</text>
+  </g>
+
+  <path d="M 275 305 L 327 305" class="solid"/>
+  <path d="M 430 380 L 430 405 L 173 405 L 173 430" class="solid"/>
+  <path d="M 275 505 L 548 505 L 548 305 L 569 305" class="solid"/>
+  <path d="M 774 305 L 826 305" class="solid"/>
+  <path d="M 1031 305 L 1068 305" class="solid"/>
+  <path d="M 1273 305 L 1325 305" class="solid"/>
+  <path d="M 1428 380 L 1428 430" class="solid"/>
+
+  <rect x="70" y="625" width="1460" height="188" rx="8" fill="#eef8f0" stroke="#4c8c36" stroke-width="2"/>
+  <text x="100" y="663" class="phase">POTENTIAL DEFENDER VISIBILITY</text>
+
+  <g id="signal1">
+    <rect x="100" y="690" width="400" height="92" rx="7" fill="#ffffff" stroke="#67a84b" stroke-width="2"/>
+    <text x="124" y="723" class="signal-title">Process and handle context</text>
+    <text x="124" y="748" class="signal-body">Unusual parent-child relationship, interactive</text>
+    <text x="124" y="769" class="signal-body">console target, and redirected standard input</text>
+  </g>
+
+  <g id="signal2">
+    <rect x="600" y="690" width="400" height="92" rx="7" fill="#ffffff" stroke="#67a84b" stroke-width="2"/>
+    <text x="624" y="723" class="signal-title">Cross-process memory behavior</text>
+    <text x="624" y="748" class="signal-body">Remote memory scanning and writable-to-executable</text>
+    <text x="624" y="769" class="signal-body">protection changes remain high-value signals</text>
+  </g>
+
+  <g id="signal3">
+    <rect x="1100" y="690" width="400" height="92" rx="7" fill="#ffffff" stroke="#67a84b" stroke-width="2"/>
+    <text x="1124" y="723" class="signal-title">Control flow and payload behavior</text>
+    <text x="1124" y="748" class="signal-body">Thread-context modification and activity that</text>
+    <text x="1124" y="769" class="signal-body">does not match the console child's command line</text>
+  </g>
+
+  <path d="M 430 380 L 430 605 L 300 605 L 300 690" class="dashed"/>
+  <path d="M 929 380 L 929 605 L 800 605 L 800 690" class="dashed"/>
+  <path d="M 1170 380 L 1170 605 L 800 605 L 800 690" class="dashed"/>
+  <path d="M 1428 580 L 1428 605 L 1300 605 L 1300 690" class="dashed"/>
+
+  <line x1="70" y1="850" x2="1530" y2="850" stroke="#cbd5e1" stroke-width="1"/>
+  <line x1="90" y1="875" x2="130" y2="875" class="solid"/>
+  <text x="145" y="880" class="note">Source-supported PoC sequence</text>
+  <line x1="430" y1="875" x2="470" y2="875" class="dashed"/>
+  <text x="485" y="880" class="note">Potential telemetry; validate against deployed sensors</text>
+  <text x="1530" y="880" text-anchor="end" class="note">No broad EDR bypass or in-the-wild use established</text>
+</svg>

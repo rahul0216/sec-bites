@@ -1,3 +1,11 @@
+- title: "Beyond WriteProcessMemory: Detecting Console Named-Pipe Injection"
+  description: How redirected console input can place payloads without WriteProcessMemory, and the behavioral signals defenders can still hunt.
+  category: Process injection
+  date: 2026-09-28
+  read_time: 8
+  image: /docs/named-pipe-process-injection/preview.svg
+  url: /docs/named-pipe-process-injection/Console-Named-Pipe-Process-Injection.html
+
 - title: Zirconium and Violet Typhoon Threat Actor Hunting Research
   description: Evidence-based analysis of Zirconium target profiles, attack flows, ATT&CK techniques, tools, indicators, and hunting hypotheses.
   category: Threat actor

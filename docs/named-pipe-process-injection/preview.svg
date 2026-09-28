@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title description">
+  <title id="title">Console named-pipe process injection</title>
+  <desc id="description">A payload travels from an injector through redirected standard input into executable memory in a console process.</desc>
+  <rect width="640" height="360" fill="#151b1d"/>
+  <text x="42" y="58" fill="#ffffff" font-family="Georgia,serif" font-size="25">CONSOLE PIPE INJECTION</text>
+  <text x="44" y="85" fill="#73c6b6" font-family="monospace" font-size="12" letter-spacing="3">STDIN / MEMORY / THREAD</text>
+  <g fill="none" stroke-width="3">
+    <rect x="50" y="130" width="148" height="130" rx="5" stroke="#73858a"/>
+    <path d="M50 163h148" stroke="#73858a"/>
+    <path d="m72 190 18 14-18 14m29 0h48" stroke="#e8c65f"/>
+    <path d="M198 208h54c20 0 20-43 40-43h42" stroke="#73c6b6" stroke-width="7"/>
+    <path d="m323 153 17 12-17 12" stroke="#73c6b6"/>
+    <rect x="340" y="118" width="250" height="166" rx="5" stroke="#73c6b6"/>
+    <path d="M340 151h250" stroke="#73c6b6"/>
+    <rect x="374" y="181" width="90" height="60" rx="4" stroke="#e8c65f"/>
+    <path d="M390 197h58m-58 14h58m-58 14h36" stroke="#e8c65f" stroke-width="4"/>
+    <path d="M464 211h64" stroke="#d96855" stroke-width="6"/>
+    <path d="m517 199 17 12-17 12" stroke="#d96855"/>
+    <circle cx="552" cy="211" r="18" stroke="#d96855"/>
+    <path d="M552 193v36" stroke="#d96855"/>
+  </g>
+  <g fill="#9bacb0" font-family="monospace" font-size="11">
+    <text x="78" y="286">INJECTOR</text>
+    <text x="218" y="235">PIPE</text>
+    <text x="378" y="266">PAYLOAD</text>
+    <text x="516" y="266">THREAD</text>
+  </g>
+</svg>
