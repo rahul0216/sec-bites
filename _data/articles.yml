@@ -1,3 +1,11 @@
+- title: Abuse of RMM and Remote Access Tools
+  description: Evidence-based analysis of attacker abuse of remote management tools, with actor mappings, indicators, hunting hypotheses, and detection strategies.
+  category: Adversary tooling
+  date: 2026-09-29
+  read_time: 20
+  image: /docs/rmm-and-remote-access-tools/preview.svg
+  url: /docs/rmm-and-remote-access-tools/Abuse-of-RMM-and-Remote-Access-Tools-Threat-Research.html
+
 - title: "Beyond WriteProcessMemory: Detecting Console Named-Pipe Injection"
   description: How redirected console input can place payloads without WriteProcessMemory, and the behavioral signals defenders can still hunt.
   category: Process injection
