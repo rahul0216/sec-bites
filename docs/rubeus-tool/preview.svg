@@ -1,28 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title description">
   <title id="title">Rubeus threat hunting research</title>
-  <desc id="description">A Kerberos ticket passes through an authentication flow while a hunting alert identifies suspicious activity.</desc>
+  <desc id="description">A workstation exchanges Kerberos requests and tickets with a domain controller while behavior-led hunting identifies suspicious ticket activity.</desc>
   <rect width="640" height="360" fill="#15191f"/>
   <text x="42" y="58" fill="#ffffff" font-family="Georgia,serif" font-size="25">RUBEUS THREAT HUNTING</text>
-  <text x="44" y="85" fill="#7eb6d8" font-family="monospace" font-size="12" letter-spacing="3">KERBEROS / TICKETS / IDENTITY ABUSE</text>
+  <text x="44" y="85" fill="#7eb6d8" font-family="monospace" font-size="12" letter-spacing="3">KERBEROS / TICKET ABUSE / IDENTITY SIGNALS</text>
+
   <g fill="none" stroke-width="3">
-    <rect x="48" y="129" width="164" height="114" rx="6" stroke="#728492"/>
-    <path d="M48 161h164" stroke="#728492"/>
-    <circle cx="76" cy="145" r="5" fill="#7eb6d8" stroke="none"/>
-    <circle cx="94" cy="145" r="5" fill="#e8c65f" stroke="none"/>
-    <path d="m75 188 18 13-18 13m31 0h60" stroke="#e8c65f"/>
-    <path d="M212 186h74" stroke="#7eb6d8" stroke-width="7"/>
-    <path d="m274 174 17 12-17 12" stroke="#7eb6d8"/>
-    <rect x="292" y="132" width="154" height="108" rx="8" stroke="#e8c65f"/>
-    <path d="M316 158h106M316 181h82M316 204h96" stroke="#e8c65f"/>
-    <path d="M446 186h54" stroke="#d96855" stroke-width="7"/>
-    <path d="m488 174 17 12-17 12" stroke="#d96855"/>
-    <path d="M536 126 590 220H482Z" stroke="#d96855"/>
-    <path d="M536 156v31m0 17v5" stroke="#d96855" stroke-width="7"/>
+    <rect x="42" y="130" width="142" height="106" rx="6" stroke="#728492"/>
+    <path d="M42 162h142" stroke="#728492"/>
+    <circle cx="65" cy="146" r="4" fill="#7eb6d8" stroke="none"/>
+    <circle cx="81" cy="146" r="4" fill="#e8c65f" stroke="none"/>
+    <path d="m64 186 16 12-16 12m28 0h50" stroke="#e8c65f"/>
+
+    <path d="M184 174h82" stroke="#7eb6d8" stroke-width="6"/>
+    <path d="m255 162 17 12-17 12" stroke="#7eb6d8"/>
+    <path d="M266 215h-82" stroke="#e8c65f" stroke-width="6"/>
+    <path d="m195 203-17 12 17 12" stroke="#e8c65f"/>
+
+    <path d="M296 127h112l20 20v91H276v-91Z" stroke="#7eb6d8"/>
+    <path d="M296 127v20h-20m132-20v20h20" stroke="#7eb6d8"/>
+    <rect x="303" y="161" width="98" height="45" rx="4" stroke="#e8c65f"/>
+    <path d="M319 176h66m-66 15h45" stroke="#e8c65f" stroke-width="4"/>
+
+    <path d="M428 183h62" stroke="#d96855" stroke-width="6"/>
+    <path d="m479 171 17 12-17 12" stroke="#d96855"/>
+    <path d="M532 127 590 228H474Z" stroke="#d96855"/>
+    <path d="M532 158v35m0 18v5" stroke="#d96855" stroke-width="7"/>
   </g>
-  <g fill="#9cabb5" font-family="monospace" font-size="11">
-    <text x="80" y="275">OPERATOR</text>
-    <text x="249" y="212">AS-REQ</text>
-    <text x="332" y="274">TICKET</text>
-    <text x="510" y="251">ALERT</text>
+
+  <g font-family="monospace">
+    <text x="73" y="272" fill="#9cabb5" font-size="11">WORKSTATION</text>
+    <text x="204" y="158" fill="#7eb6d8" font-size="10">AS/TGS-REQ</text>
+    <text x="209" y="240" fill="#e8c65f" font-size="10">TICKET</text>
+    <text x="312" y="272" fill="#9cabb5" font-size="11">KDC</text>
+    <text x="510" y="254" fill="#9cabb5" font-size="11">HUNT</text>
+    <text x="69" y="313" fill="#d96855" font-size="11">ROASTING / S4U / PKINIT / FORGED TICKETS</text>
   </g>
 </svg>
