@@ -1,28 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title description">
   <title id="title">Console named-pipe process injection</title>
-  <desc id="description">A payload travels from an injector through redirected standard input into executable memory in a console process.</desc>
-  <rect width="640" height="360" fill="#151b1d"/>
-  <text x="42" y="58" fill="#ffffff" font-family="Georgia,serif" font-size="25">CONSOLE PIPE INJECTION</text>
-  <text x="44" y="85" fill="#73c6b6" font-family="monospace" font-size="12" letter-spacing="3">STDIN / MEMORY / THREAD</text>
+  <desc id="description">An injector sends a payload through redirected standard input into a console child, then changes memory protection and redirects a thread.</desc>
+  <rect width="640" height="360" fill="#15191f"/>
+  <text x="42" y="58" fill="#ffffff" font-family="Georgia,serif" font-size="25">BEYOND WRITEPROCESSMEMORY</text>
+  <text x="44" y="85" fill="#7eb6d8" font-family="monospace" font-size="12" letter-spacing="3">CONSOLE PIPE / EXECUTABLE MEMORY / THREAD</text>
+
   <g fill="none" stroke-width="3">
-    <rect x="50" y="130" width="148" height="130" rx="5" stroke="#73858a"/>
-    <path d="M50 163h148" stroke="#73858a"/>
-    <path d="m72 190 18 14-18 14m29 0h48" stroke="#e8c65f"/>
-    <path d="M198 208h54c20 0 20-43 40-43h42" stroke="#73c6b6" stroke-width="7"/>
-    <path d="m323 153 17 12-17 12" stroke="#73c6b6"/>
-    <rect x="340" y="118" width="250" height="166" rx="5" stroke="#73c6b6"/>
-    <path d="M340 151h250" stroke="#73c6b6"/>
-    <rect x="374" y="181" width="90" height="60" rx="4" stroke="#e8c65f"/>
-    <path d="M390 197h58m-58 14h58m-58 14h36" stroke="#e8c65f" stroke-width="4"/>
-    <path d="M464 211h64" stroke="#d96855" stroke-width="6"/>
-    <path d="m517 199 17 12-17 12" stroke="#d96855"/>
-    <circle cx="552" cy="211" r="18" stroke="#d96855"/>
-    <path d="M552 193v36" stroke="#d96855"/>
+    <rect x="42" y="132" width="140" height="104" rx="6" stroke="#728492"/>
+    <path d="M42 163h140" stroke="#728492"/>
+    <circle cx="65" cy="148" r="4" fill="#7eb6d8" stroke="none"/>
+    <circle cx="81" cy="148" r="4" fill="#e8c65f" stroke="none"/>
+    <path d="m64 187 16 12-16 12m28 0h48" stroke="#e8c65f"/>
+
+    <path d="M182 184h42c18 0 18 30 36 30h38" stroke="#7eb6d8" stroke-width="7"/>
+    <path d="m287 202 17 12-17 12" stroke="#7eb6d8"/>
+    <circle cx="218" cy="184" r="8" fill="#15191f" stroke="#7eb6d8"/>
+    <circle cx="246" cy="207" r="8" fill="#15191f" stroke="#7eb6d8"/>
+
+    <rect x="304" y="116" width="294" height="150" rx="6" stroke="#7eb6d8"/>
+    <path d="M304 149h294" stroke="#7eb6d8"/>
+    <circle cx="327" cy="133" r="4" fill="#7eb6d8" stroke="none"/>
+    <circle cx="343" cy="133" r="4" fill="#e8c65f" stroke="none"/>
+
+    <rect x="330" y="176" width="96" height="58" rx="4" stroke="#e8c65f"/>
+    <path d="M346 192h64m-64 13h64m-64 13h42" stroke="#e8c65f" stroke-width="4"/>
+    <path d="M426 205h68" stroke="#d96855" stroke-width="6"/>
+    <path d="m483 193 17 12-17 12" stroke="#d96855"/>
+    <circle cx="532" cy="205" r="23" stroke="#d96855"/>
+    <path d="M532 182v46m-13-23h26" stroke="#d96855" stroke-width="5"/>
   </g>
-  <g fill="#9bacb0" font-family="monospace" font-size="11">
-    <text x="78" y="286">INJECTOR</text>
-    <text x="218" y="235">PIPE</text>
-    <text x="378" y="266">PAYLOAD</text>
-    <text x="516" y="266">THREAD</text>
+
+  <g font-family="monospace">
+    <text x="69" y="271" fill="#9cabb5" font-size="11">INJECTOR</text>
+    <text x="198" y="251" fill="#9cabb5" font-size="11">REDIRECTED STDIN</text>
+    <text x="336" y="289" fill="#9cabb5" font-size="11">PAYLOAD BUFFER</text>
+    <text x="503" y="289" fill="#9cabb5" font-size="11">THREAD</text>
+    <text x="329" y="165" fill="#7eb6d8" font-size="10">CONSOLE CHILD</text>
+    <text x="65" y="313" fill="#d96855" font-size="11">NO VIRTUALALLOCEX + WRITEPROCESSMEMORY CHAIN</text>
   </g>
 </svg>
