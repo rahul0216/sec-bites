@@ -671,6 +671,28 @@ a {
   text-transform: uppercase;
 }
 
+.article-figure {
+  margin: 2.5rem 0;
+  padding: clamp(0.5rem, 2vw, 1rem);
+  border: 1px solid var(--line);
+  background: #ffffff;
+}
+
+.article-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.article-figure figcaption {
+  margin-top: 1rem;
+  color: #486581;
+  font-family: ui-monospace, "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+  font-size: 0.68rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .article-content table {
   display: block;
   width: 100%;
