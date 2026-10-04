@@ -142,6 +142,14 @@
   image: /docs/cobat-strike-tool/preview.svg
   url: /docs/cobat-strike-tool/Cobalt-Strike-Threat-Hunting-Research.html
 
+- title: Phishing Techniques Research for Hunting Development
+  description: Analysis of device code phishing, AiTM kits, OAuth abuse, ClickFix, vishing, rogue RDP lures, and behavior-led hunting opportunities.
+  category: Phishing
+  date: 2026-07-21
+  read_time: 15
+  image: /docs/clickfix-phishing/phishing-attack-flows/clickfix-command-execution.svg
+  url: /docs/clickfix-phishing/phishing-techniques-hunting-research.html
+
 - title: Lazarus Group Threat Actor Hunting Research
   description: Cluster-aware analysis of Lazarus Group attack flows, campaigns, tools, indicators, and hunting hypotheses for Microsoft Defender XDR and Sentinel.
   category: Threat actor

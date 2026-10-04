@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"
+  role="img" aria-labelledby="title description">
+  <title id="title">Rogue RDP Attachment Lure</title>
+  <desc id="description">A trusted-looking RDP file causes the victim endpoint to initiate an attacker-directed session.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6"
+      orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,6 L0,12 z" fill="#405365"/>
+    </marker>
+    <style>
+      .title { font: 700 42px 'Segoe UI', Arial, sans-serif; fill: #102a43; }
+      .subtitle { font: 400 22px 'Segoe UI', Arial, sans-serif; fill: #486581; }
+      .label { font: 700 23px 'Segoe UI', Arial, sans-serif; fill: #102a43; }
+      .mapping { font: 600 18px 'Segoe UI', Arial, sans-serif; fill: #334e68; }
+      .confidence { font: 400 17px 'Segoe UI', Arial, sans-serif; fill: #627d98; }
+      .number { font: 700 20px 'Segoe UI', Arial, sans-serif; fill: #ffffff; }
+      .legend { font: 400 17px 'Segoe UI', Arial, sans-serif; fill: #486581; }
+      .edge { fill: none; stroke: #405365; stroke-width: 5; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="#ffffff"/>
+  <text x="80" y="76" class="title">Rogue RDP Attachment Lure</text>
+  <text x="80" y="116" class="subtitle">A trusted-looking RDP file causes the victim endpoint to initiate an attacker-directed session.</text>
+  <path class="edge" d="M460 265 H570"/>
+  <path class="edge" d="M930 265 H1040"/>
+  <path class="edge" d="M1220 350 V535"/>
+  <path class="edge" d="M1040 620 H930"/>
+  <path class="edge" d="M570 620 H460"/>
+  <g aria-label="Node 1">
+    <rect x="100" y="180" width="360" height="170" rx="22"
+      fill="#E8F2FF" stroke="#4A90E2" stroke-width="4"/>
+    <circle cx="136" cy="216" r="22"
+      fill="#4A90E2"/>
+    <text x="136" y="224" text-anchor="middle"
+      class="number">1</text>
+    <text x="172" y="235" class="label">RDP attachment delivered</text>
+    <text x="128" y="298" class="mapping">T1566.001 Attachment</text>
+    <text x="128" y="328" class="confidence">High confidence</text>
+  </g>
+  <g aria-label="Node 2">
+    <rect x="570" y="180" width="360" height="170" rx="22"
+      fill="#E8F2FF" stroke="#4A90E2" stroke-width="4"/>
+    <circle cx="606" cy="216" r="22"
+      fill="#4A90E2"/>
+    <text x="606" y="224" text-anchor="middle"
+      class="number">2</text>
+    <text x="642" y="235" class="label">Victim opens RDP file</text>
+    <text x="598" y="298" class="mapping">T1204.002 Malicious File</text>
+    <text x="598" y="328" class="confidence">High confidence</text>
+  </g>
+  <g aria-label="Node 3">
+    <rect x="1040" y="180" width="360" height="170" rx="22"
+      fill="#FFF5D9" stroke="#D99A00" stroke-width="4"/>
+    <circle cx="1076" cy="216" r="22"
+      fill="#D99A00"/>
+    <text x="1076" y="224" text-anchor="middle"
+      class="number">3</text>
+    <text x="1112" y="235" class="label">mstsc loads lure settings</text>
+    <text x="1068" y="298" class="mapping">RDP client execution</text>
+    <text x="1068" y="328" class="confidence">High confidence</text>
+  </g>
+  <g aria-label="Node 4">
+    <rect x="1040" y="535" width="360" height="170" rx="22"
+      fill="#F2EBFF" stroke="#8D63C7" stroke-width="4"/>
+    <circle cx="1076" cy="571" r="22"
+      fill="#8D63C7"/>
+    <text x="1076" y="579" text-anchor="middle"
+      class="number">4</text>
+    <text x="1112" y="590" class="label">Outbound RDP session</text>
+    <text x="1068" y="653" class="mapping">T1021.001 RDP</text>
+    <text x="1068" y="683" class="confidence">High confidence</text>
+  </g>
+  <g aria-label="Node 5">
+    <rect x="570" y="535" width="360" height="170" rx="22"
+      fill="#FFF0ED" stroke="#D95B4B" stroke-width="4"/>
+    <circle cx="606" cy="571" r="22"
+      fill="#D95B4B"/>
+    <text x="606" y="579" text-anchor="middle"
+      class="number">5</text>
+    <text x="642" y="590" class="label">Remote resources exposed</text>
+    <text x="598" y="653" class="mapping">Configuration-dependent</text>
+    <text x="598" y="683" class="confidence">Medium confidence</text>
+  </g>
+  <g aria-label="Node 6">
+    <rect x="100" y="535" width="360" height="170" rx="22"
+      fill="#F1F3F5" stroke="#7A8288" stroke-width="4"/>
+    <circle cx="136" cy="571" r="22"
+      fill="#7A8288"/>
+    <text x="136" y="579" text-anchor="middle"
+      class="number">6</text>
+    <text x="172" y="590" class="label">Follow-on endpoint activity</text>
+    <text x="128" y="653" class="mapping">Campaign-dependent</text>
+    <text x="128" y="683" class="confidence">Low confidence</text>
+  </g>
+  <line x1="80" y1="790" x2="180" y2="790" class="edge"/>
+  <text x="205" y="797" class="legend">Source-supported sequence</text>
+  <text x="80" y="842" class="legend">Mappings show the most specific verified ATT&amp;CK technique supported by the cited behavior.</text>
+</svg>
