@@ -1,3 +1,11 @@
+- title: NetExec Threat Hunting Research
+  description: Evidence-based analysis of NetExec capabilities, observed threat use, lateral movement, credential access, and behavior-led hunting hypotheses.
+  category: Adversary tooling
+  date: 2026-10-05
+  read_time: 28
+  image: /docs/netexec-tool/preview.svg
+  url: /docs/netexec-tool/NetExec-Threat-Hunting-Research.html
+
 - title: OpenSUpdater Hides Malware in Recompiled 7-Zip SFX Installers
   description: Analysis of a modified 7-Zip extraction stub, reflective loading chain, certificate evasion, indicators, and defensive guidance.
   category: Malware
