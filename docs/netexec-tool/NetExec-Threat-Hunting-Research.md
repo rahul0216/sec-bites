@@ -13,7 +13,7 @@ keywords:
   - microsoft defender xdr
   - microsoft sentinel
   - mitre attack
-estimated_reading_time: 28
+estimated_reading_time: 22
 ---
 
 ## Executive Summary
@@ -67,10 +67,6 @@ of current NetExec behavior or use. MITRE ATT&CK software S0488 identifies
 CrackMapExec, not NetExec, so this report does not reuse that software identifier
 or its actor associations.
 
-A documented option proves capability, not that every NetExec deployment used
-it. A campaign report proves the behavior observed in that incident, not a
-universal NetExec pattern. Historical hashes, paths, command lines, and database
-names are hunt leads that require current environment and incident validation.
 
 ## Tool Context and Provenance
 
@@ -616,47 +612,6 @@ the tool:
 Controls can have compatibility effects. Test them against legitimate
 administration and recovery workflows before broad enforcement.
 
-## Validation Plan
-
-### Data Validation
-
-1. Confirm required Defender products, Sentinel connectors, audit policies, and
-   retention.
-2. Verify each named table and column exists and is populated in the target
-   tenant.
-3. Inspect actual action types, logon types, protocols, and event payloads.
-4. Validate IP-to-device and account normalization across endpoint and identity
-   data.
-5. Measure missing telemetry for Linux, appliances, domain controllers, and
-   unmanaged systems.
-
-### Controlled Behavior Validation
-
-Use an authorized lab or assessment window to test one behavior at a time:
-
-1. SMB host enumeration across a small approved range.
-2. Failed and successful authentication with a dedicated test account.
-3. One remote execution method per test using a benign command.
-4. One directory query or roasting simulation with non-production identities.
-5. One credential-access simulation against disposable secrets.
-6. One coercion attempt against a lab listener with relay protections enabled.
-
-Record the source, target, account, command, expected timestamps, action types,
-events, files, registry changes, cleanup, and negative controls. Do not claim
-coverage until expected results are observed in the deployed environment.
-
-### Detection Validation
-
-For each hypothesis, document:
-
-* Required and optional data sources
-* Expected true-positive sequence
-* Known benign alternatives
-* Threshold and baseline rationale
-* Join keys and acceptable time skew
-* Product, connector, operating-system, and event-version dependencies
-* Blind spots and expected false negatives
-* Analyst evidence required before escalation
 
 ## Triage and Containment Guidance
 
