@@ -1,3 +1,11 @@
+- title: Slopsquatting and HalluSquatting Threat Research
+  description: Evidence-based analysis of AI package hallucinations, package-name squatting, supply-chain risk, and practical defenses.
+  category: AI security
+  date: 2026-10-06
+  read_time: 9
+  image: /docs/slopsquatting/preview.svg
+  url: /docs/slopsquatting/Slopsquatting-Hallusquatting-Threat-Research.html
+
 - title: NetExec Threat Hunting Research
   description: Evidence-based analysis of NetExec capabilities, observed threat use, lateral movement, credential access, and behavior-led hunting hypotheses.
   category: Adversary tooling
