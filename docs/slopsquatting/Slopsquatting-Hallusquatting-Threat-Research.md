@@ -60,8 +60,6 @@ Public evidence establishes package hallucination, recurrence, claimable names, 
 
 ## MITRE ATT&CK mapping
 
-### MITRE mapping result
-
 Summary: Medium confidence; the scenario supports the Initial Access tactic and a conditional T1195.002 technique mapping, while malicious compromise remains unverified.
 
 Tactics:
@@ -83,8 +81,6 @@ Assumptions And Gaps:
 * No reviewed primary evidence confirms payload execution, credential theft, command and control, persistence, lateral movement, exfiltration, or impact. Those mappings are therefore omitted.
 
 ## Attack flow
-
-### Attack flow result
 
 Summary: Evidence-backed Slopsquatting/HalluSquatting flow using MITRE ATT&CK where applicable. Overall confidence is medium because research demonstrates the mechanism and controlled retrieval, but not an end-to-end malicious in-the-wild compromise.
 
