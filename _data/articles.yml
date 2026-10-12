@@ -1,3 +1,11 @@
+- title: "CVE-2026-105192: Critical LMCache Unauthenticated Remote Code Execution"
+  description: Analysis of unsafe pickle deserialization in LMCache's unauthenticated multiprocess ZeroMQ transport, including exposure, remediation, and detection guidance.
+  category: Vulnerability
+  date: 2026-10-12
+  read_time: 10
+  image: /docs/LMCache-cve-2026-105192-vulnerability-report/preview.svg
+  url: /docs/LMCache-cve-2026-105192-vulnerability-report/LMCache-CVE-2026-105192-Vulnerability-Report.html
+
 - title: PromptSteal and LAMEHUG Malware Research
   description: Threat analysis of APT28-associated malware that uses a hosted large language model to generate and execute commands at runtime.
   category: Malware
