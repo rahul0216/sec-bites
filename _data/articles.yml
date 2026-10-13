@@ -1,3 +1,11 @@
+- title: XWorm Malware Research Report
+  description: Evidence-grounded research on XWorm capabilities, observed campaigns, ATT&CK mappings, indicators, detection opportunities, and response.
+  category: Malware
+  date: 2026-10-13
+  read_time: 8
+  image: /docs/xworm-rat/preview.svg
+  url: /docs/xworm-rat/XWorm-Threat-Research-Report.html
+
 - title: "CVE-2026-105192: Critical LMCache Unauthenticated Remote Code Execution"
   description: Analysis of unsafe pickle deserialization in LMCache's unauthenticated multiprocess ZeroMQ transport, including exposure, remediation, and detection guidance.
   category: Vulnerability
