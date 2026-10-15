@@ -18,9 +18,9 @@ estimated_reading_time: 8
 
 An attacker does not always need a software vulnerability to steal valuable code. Sometimes, a compromised employee identity opens the door.
 
-Meta is notifying roughly 1,500 people after attackers used an employee's stolen credentials to access some of its GitHub repositories and take product source code and personal information. Most affected individuals are Meta employees in the United States, according to the company's statements to SecurityWeek, published on October 13, 2026. [1]
+Meta is notifying roughly 1,500 people after attackers used an employee's stolen credentials to access some of its GitHub repositories and take product source code and personal information. Most affected individuals are Meta employees in the United States, according to the company's statements to SecurityWeek, published on October 13, 2026.
 
-The scope matters. Meta says its internal systems were not breached and the incident did not result from a vulnerability in a Meta product. The disclosed compromise involved Meta business data stored on GitHub. That makes this a repository-access and data-exposure incident, not evidence that Facebook, Instagram, or WhatsApp accounts were compromised. [1]
+The scope matters. Meta says its internal systems were not breached and the incident did not result from a vulnerability in a Meta product. The disclosed compromise involved Meta business data stored on GitHub. That makes this a repository-access and data-exposure incident, not evidence that Facebook, Instagram, or WhatsApp accounts were compromised.
 
 The case illustrates two connected security problems: protecting the identities that can access development platforms, and controlling the information those platforms contain.
 
@@ -28,7 +28,7 @@ The case illustrates two connected security problems: protecting the identities 
 
 ## What the public reporting establishes
 
-SecurityWeek's original report quotes Meta directly. CybersecurityNews subsequently covered the disclosure and linked back to SecurityWeek. These are not two independent technical investigations of the intrusion. [1][2]
+SecurityWeek's original report quotes Meta directly. CybersecurityNews subsequently covered the disclosure and linked back to SecurityWeek. These are not two independent technical investigations of the intrusion.
 
 | Topic                  | Disclosed information                                                                                   |
 |------------------------|---------------------------------------------------------------------------------------------------------|
@@ -43,7 +43,7 @@ SecurityWeek's original report quotes Meta directly. CybersecurityNews subsequen
 | Follow-up              | Meta rotated repository secrets and added controls to prevent and detect inappropriate data storage.   |
 | Support for individuals| Affected people were offered credit and dark web monitoring.                                            |
 
-All incident facts in this table come from SecurityWeek's account of Meta's disclosure. [1]
+All incident facts in this table come from SecurityWeek's account of Meta's disclosure.
 
 The 99% and 1% figures describe Meta's characterization of the stolen material. They do not mean that 1% of Meta users or employees were affected, and the report does not specify whether those proportions were measured by bytes, files, records, or another method.
 
@@ -54,13 +54,13 @@ The publicly described sequence is short:
 1. An employee's credentials were stolen by an undisclosed method.
 2. An outside group used those credentials to access Meta repositories on GitHub.
 3. The attackers took business data, including product code, and personal information.
-4. Meta detected the intrusion, blocked access, and began containment and notification work. [1]
+4. Meta detected the intrusion, blocked access, and began containment and notification work.
 
 That sequence does not establish how the credentials were obtained. Phishing, endpoint malware, session theft, and exposed tokens are possible mechanisms in repository incidents generally, but none has been identified as the mechanism in this case.
 
 Nor does the phrase "stolen credentials" establish that a password alone was sufficient. The reporting does not identify the authentication material, the account's permissions, the authentication path, or whether multifactor authentication was involved.
 
-The attackers have not been publicly identified in the reviewed reports. Meta said its investigation with GitHub had not indicated that the group was specifically after Meta's data. That is a preliminary assessment of targeting, not an attribution finding or proof of the attackers' broader motives. [1]
+The attackers have not been publicly identified in the reviewed reports. Meta said its investigation with GitHub had not indicated that the group was specifically after Meta's data. That is a preliminary assessment of targeting, not an attribution finding or proof of the attackers' broader motives.
 
 ### Disclosure timeline
 
@@ -72,15 +72,15 @@ The attackers have not been publicly identified in the reviewed reports. Meta sa
 | October 13, 2026               | SecurityWeek published the disclosure; individual notifications began that day.  |
 | As reported on October 13      | Meta described secret rotation, security hardening, and additional data controls.|
 
-The available timeline does not establish attacker dwell time or a precise interval between discovery and notification. [1]
+The available timeline does not establish attacker dwell time or a precise interval between discovery and notification.
 
 ## Why personal information was in code repositories
 
-Meta told SecurityWeek that the personal information had been placed in the repositories by mistake, contrary to company policy. The company did not disclose which categories of personal information were involved. [1]
+Meta told SecurityWeek that the personal information had been placed in the repositories by mistake, contrary to company policy. The company did not disclose which categories of personal information were involved.
 
 That gap prevents a precise privacy-impact assessment. It would be speculative to claim that Social Security numbers, financial details, passwords, medical records, or identity documents were exposed.
 
-Meta also said that a significant portion of material resembling personal information was synthetic or anonymized test data. The company suggested this could make it harder for attackers to distinguish genuine records from test records. [1]
+Meta also said that a significant portion of material resembling personal information was synthetic or anonymized test data. The company suggested this could make it harder for attackers to distinguish genuine records from test records.
 
 That statement should not be read as a guarantee that real information is unusable. Synthetic data and anonymized data are different concepts, and the reporting does not describe how the latter was anonymized or tested for re-identification risk. The presence of test records does not negate the exposure of genuine personal information.
 
@@ -90,7 +90,7 @@ For engineering teams, the lesson is that a policy against storing personal data
 
 The code exposure deserves attention even though Meta says its internal systems were not breached.
 
-Stolen source code can reveal implementation details and help an adversary examine potential weaknesses. Repository content may also contain credentials that require a separate response. Meta's statement that it rotated secrets found in the affected repositories makes secret exposure a relevant part of the disclosed remediation. It does not establish that those secrets were active or used by the attackers. [1]
+Stolen source code can reveal implementation details and help an adversary examine potential weaknesses. Repository content may also contain credentials that require a separate response. Meta's statement that it rotated secrets found in the affected repositories makes secret exposure a relevant part of the disclosed remediation. It does not establish that those secrets were active or used by the attackers.
 
 There is an important boundary between potential consequences and observed activity:
 
@@ -104,7 +104,7 @@ Calling this a confirmed software supply-chain attack would therefore go beyond 
 
 ## Meta's response addresses access and stored data
 
-According to SecurityWeek, Meta shut down attacker access, engaged GitHub and law enforcement, rotated secrets found in the repositories, and hardened product security against risks arising from the stolen business data. The company also described additional repository protections and proactive scanning for user information uploaded by mistake. [1]
+According to SecurityWeek, Meta shut down attacker access, engaged GitHub and law enforcement, rotated secrets found in the repositories, and hardened product security against risks arising from the stolen business data. The company also described additional repository protections and proactive scanning for user information uploaded by mistake.
 
 Those actions address different parts of the incident:
 
@@ -116,7 +116,7 @@ Those actions address different parts of the incident:
 
 The effectiveness and completeness of these measures have not been independently validated here.
 
-GitHub's remediation guidance explains why deleting a secret from a file is insufficient. An exposed credential must be revoked with its provider; a replacement may also be needed for legitimate workloads. Removing a file or creating a cleanup commit does not invalidate copies already obtained by an attacker. [3]
+GitHub's remediation guidance explains why deleting a secret from a file is insufficient. An exposed credential must be revoked with its provider; a replacement may also be needed for legitimate workloads. Removing a file or creating a cleanup commit does not invalidate copies already obtained by an attacker.
 
 ## What security teams should do differently
 
@@ -124,13 +124,13 @@ These recommendations apply to repository security generally. They are not findi
 
 ### Protect developer identities and limit their reach
 
-Prefer phishing-resistant authentication, such as security keys or passkeys where supported. Review recovery paths, active sessions, and endpoint security alongside login controls. GitHub documents its supported two-factor authentication options and the separate identity-provider requirements for enterprise managed users. [6]
+Prefer phishing-resistant authentication, such as security keys or passkeys where supported. Review recovery paths, active sessions, and endpoint security alongside login controls. GitHub documents its supported two-factor authentication options and the separate identity-provider requirements for enterprise managed users.
 
 Limit access to the repositories each person or integration needs. Review employee access, outside collaborators, tokens, SSH keys, and application permissions. Strong authentication and least privilege solve different problems: one reduces unauthorized entry, while the other limits what an intruder can reach.
 
 ### Treat secrets and personal data as separate scanning problems
 
-Enable secret scanning and push protection where available, and review bypasses. GitHub describes push protection as a mechanism for blocking detected secrets before they reach a repository. Its availability and behavior depend on configuration and account or repository context. [4]
+Enable secret scanning and push protection where available, and review bypasses. GitHub describes push protection as a mechanism for blocking detected secrets before they reach a repository. Its availability and behavior depend on configuration and account or repository context.
 
 Do not mistake secret scanning for comprehensive personal-data detection. Names, addresses, employee records, and free-text case material may require different classification rules and review workflows.
 
@@ -138,7 +138,7 @@ Use purpose-built synthetic fixtures when real personal information is unnecessa
 
 ### Collect evidence before an incident forces the question
 
-Preserve repository and identity audit evidence in a centrally accessible location. GitHub's organization audit log records information about who performed an action, what the action was, and when it occurred. [5]
+Preserve repository and identity audit evidence in a centrally accessible location. GitHub's organization audit log records information about who performed an action, what the action was, and when it occurred.
 
 Investigate unusual repository access, available download or Git activity, credential changes, and new integrations in context. Legitimate automation can resemble bulk access, so establish normal patterns before treating volume alone as malicious.
 
@@ -158,7 +158,7 @@ People who receive a notification should follow the instructions in that notice,
 
 Be alert to messages that use the breach as a pretext to request credentials, payment, or identity documents. This is a precaution, not evidence that such a follow-on campaign has been observed.
 
-For the wider public, the reviewed reports do not establish that ordinary Facebook, Instagram, or WhatsApp users were affected. The stated figure of roughly 1,500 people should not be presented as a consumer-account compromise. [1]
+For the wider public, the reviewed reports do not establish that ordinary Facebook, Instagram, or WhatsApp users were affected. The stated figure of roughly 1,500 people should not be presented as a consumer-account compromise.
 
 ## The bottom line
 
