@@ -1,3 +1,11 @@
+- title: "Meta GitHub Breach: Stolen Credentials Expose Code and Personal Data"
+  description: Analysis of the credential-driven repository breach that exposed Meta product code and personal data affecting about 1,500 people.
+  category: Data breach
+  date: 2026-10-15
+  read_time: 8
+  image: /docs/meta-github-breach/preview.svg
+  url: /docs/meta-github-breach/Meta-GitHub-Breach-Research-Report.html
+
 - title: GhostAction Supply Chain Campaign Threat Research
   description: Threat analysis of the GhostAction GitHub Actions credential theft campaign.
   category: Supply-chain campaign
