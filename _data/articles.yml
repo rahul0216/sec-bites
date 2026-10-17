@@ -1,3 +1,11 @@
+- title: ROMULUS ClickFix Platform Threat Research
+  description: Analysis of the ROMULUS malware-delivery platform, linked Custom GPT lures, Stardock DLL sideloading, LegionLoader delivery, and defensive priorities.
+  category: Malware
+  date: 2026-10-17
+  read_time: 10
+  image: /docs/romulus-clickfix-platform/preview.svg
+  url: /docs/romulus-clickfix-platform/ROMULUS-ClickFix-Platform-Threat-Research.html
+
 - title: "Meta GitHub Breach: Stolen Credentials Expose Code and Personal Data"
   description: Analysis of the credential-driven repository breach that exposed Meta product code and personal data affecting about 1,500 people.
   category: Data breach
