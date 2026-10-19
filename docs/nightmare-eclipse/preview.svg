@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title description">
+  <title id="title">Abstract Nightmare Eclipse research artwork</title>
+  <desc id="description">A dark disc eclipses a violet corona, with fractured cyan orbits and coral light scattering into the surrounding darkness.</desc>
+
+  <defs>
+    <radialGradient id="background" cx=".5" cy=".5" r=".76">
+      <stop offset="0" stop-color="#251b46"/>
+      <stop offset=".55" stop-color="#101326"/>
+      <stop offset="1" stop-color="#060a14"/>
+    </radialGradient>
+    <radialGradient id="corona">
+      <stop offset=".5" stop-color="#a898ff" stop-opacity="0"/>
+      <stop offset=".69" stop-color="#a898ff" stop-opacity=".16"/>
+      <stop offset=".76" stop-color="#d7baff" stop-opacity=".9"/>
+      <stop offset=".82" stop-color="#8d67e8" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#8d67e8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="disc" cx=".35" cy=".3" r=".8">
+      <stop offset="0" stop-color="#15162b"/>
+      <stop offset="1" stop-color="#050812"/>
+    </radialGradient>
+    <linearGradient id="orbit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#86ede6" stop-opacity=".08"/>
+      <stop offset=".5" stop-color="#86ede6" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#af96ff" stop-opacity=".12"/>
+    </linearGradient>
+    <linearGradient id="fracture" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eee0ff"/>
+      <stop offset=".45" stop-color="#c59aff"/>
+      <stop offset="1" stop-color="#ff8a91"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="640" height="360" fill="url(#background)"/>
+  <g fill="none" stroke="#a69bcf" stroke-opacity=".1">
+    <circle cx="320" cy="180" r="153"/>
+    <circle cx="320" cy="180" r="136" stroke-dasharray="1 12" stroke-linecap="round"/>
+    <path d="M24 180h122M494 180h122M320 16v22M320 322v22"/>
+  </g>
+
+  <circle cx="320" cy="180" r="142" fill="url(#corona)"/>
+  <circle cx="320" cy="180" r="105" fill="url(#disc)"/>
+  <path d="M244 108a105 105 0 0 1 156 140" fill="none" stroke="#e1c9ff" stroke-opacity=".7" stroke-width="1.5"/>
+
+  <g fill="none" stroke="url(#orbit)" transform="rotate(-24 320 180)">
+    <ellipse cx="320" cy="180" rx="242" ry="54" stroke-width="1.5" stroke-dasharray="490 64 180 40"/>
+    <ellipse cx="320" cy="180" rx="218" ry="72" stroke-opacity=".38"/>
+  </g>
+
+  <g fill="none" stroke="url(#fracture)" stroke-linecap="round" filter="url(#glow)">
+    <path d="M397 107a108 108 0 0 1 25 102" stroke-width="3"/>
+    <path d="m425 218 14 17-3 16 19 20" stroke-width="2"/>
+    <path d="m445 212 17 8M457 244l15 6M466 274l9 11" stroke-width="2"/>
+  </g>
+
+  <g fill="#ff9caa" filter="url(#glow)">
+    <path d="m463 227 7 4-5 7Z"/>
+    <path d="m487 260 6 6-8 2Z"/>
+    <circle cx="494" cy="234" r="2"/>
+    <circle cx="514" cy="276" r="1.5"/>
+    <circle cx="458" cy="295" r="1.5"/>
+  </g>
+
+  <g fill="#a2e8e5">
+    <circle cx="127" cy="240" r="2.5" opacity=".8"/>
+    <circle cx="177" cy="260" r="1.5" opacity=".5"/>
+    <circle cx="480" cy="91" r="2" opacity=".6"/>
+    <circle cx="534" cy="111" r="1.5" opacity=".4"/>
+  </g>
+</svg>

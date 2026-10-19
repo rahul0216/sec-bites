@@ -1,3 +1,11 @@
+- title: "Nightmare Eclipse: The Researcher, the Defender Exploits, and the Attacks That Followed"
+  description: How Abdelhamid Naceri's Nightmare Eclipse disclosures became part of a wider story about Windows security flaws, public exploits, and real-world attacks.
+  category: Vulnerability
+  date: 2026-10-19
+  read_time: 7
+  image: /docs/nightmare-eclipse/preview.svg
+  url: /docs/nightmare-eclipse/Nightmare-Eclipse-Threat-Research.html
+
 - title: ROMULUS ClickFix Platform Threat Research
   description: Analysis of the ROMULUS malware-delivery platform, linked Custom GPT lures, Stardock DLL sideloading, LegionLoader delivery, and defensive priorities.
   category: Malware
