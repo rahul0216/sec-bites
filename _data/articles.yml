@@ -1,3 +1,11 @@
+- title: "PHP2Shell: Critical PHP Flaws Put Web Servers at Risk"
+  description: What defenders need to know about PHP2Shell, reported exploitation, affected PHP versions, and the actions that matter most.
+  category: Vulnerability
+  date: 2026-10-22
+  read_time: 6
+  image: /docs/php2shell-vulnerability/preview.svg
+  url: /docs/php2shell-vulnerability/PHP2Shell-Threat-Research.html
+
 - title: "Nightmare Eclipse: The Researcher, the Defender Exploits, and the Attacks That Followed"
   description: How Abdelhamid Naceri's Nightmare Eclipse disclosures became part of a wider story about Windows security flaws, public exploits, and real-world attacks.
   category: Vulnerability
