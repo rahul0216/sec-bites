@@ -1,3 +1,11 @@
+- title: "Node2Shell: When Compressed Data Becomes a Code Execution Risk"
+  description: How CVE-2026-111497 turns Brotli decompression into a Node.js security boundary, why inbound-only defenses are incomplete, and what defenders should do.
+  category: Vulnerability
+  date: 2026-10-24
+  read_time: 8
+  image: /docs/node2shell-vulnerability/preview.svg
+  url: /docs/node2shell-vulnerability/Node2Shell-Vuln-Research.html
+
 - title: "PHP2Shell: Critical PHP Flaws Put Web Servers at Risk"
   description: What defenders need to know about PHP2Shell, reported exploitation, affected PHP versions, and the actions that matter most.
   category: Vulnerability
