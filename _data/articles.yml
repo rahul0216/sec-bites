@@ -1,3 +1,11 @@
+- title: "Java's Emergency HTTPS Trust Fix: Why the October 21 Update Is Not the Finish Line"
+  description: Oracle's eMudhra response moved from intermediate blocking to root removal. What CVE-2026-91403 and CVE-2026-114820 mean for Java teams.
+  category: Vulnerability
+  date: 2026-10-25
+  read_time: 10
+  image: /docs/oracle-java-eMudhra-HTTPS-trust-vulnerability-report/preview.svg
+  url: /docs/oracle-java-eMudhra-HTTPS-trust-vulnerability-report/Oracle-Java-eMudhra-HTTPS-Trust-Vulnerability-Report.html
+
 - title: "Node2Shell: When Compressed Data Becomes a Code Execution Risk"
   description: How CVE-2026-111497 turns Brotli decompression into a Node.js security boundary, why inbound-only defenses are incomplete, and what defenders should do.
   category: Vulnerability
