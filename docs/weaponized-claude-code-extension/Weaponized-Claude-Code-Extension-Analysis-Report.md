@@ -77,8 +77,6 @@ The branches show reported loader behavior, not an exact execution order.
 Successful remote login requires a working tunnel, a reachable local SSH
 service, and accepted authentication. The dashed path is conditional:
 successful attacker sessions are not established by the reviewed sources.
-An [editable SVG version](./claude-code-extension-attack-flow.svg) is
-available for publication.
 
 ### Execution happened at extension runtime
 
