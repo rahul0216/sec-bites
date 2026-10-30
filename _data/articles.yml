@@ -1,3 +1,11 @@
+- title: "A Weaponized Claude Code Extension Turned Developer Trust Into an SSH Backdoor"
+  description: "An analysis of the modified Claude Code extension distributed through Cursor's marketplace, its SSH implant, exposure limits, and defensive response."
+  category: Supply-chain campaign
+  date: 2026-10-30
+  read_time: 10
+  image: /docs/weaponized-claude-code-extension/preview.svg
+  url: /docs/weaponized-claude-code-extension/Weaponized-Claude-Code-Extension-Analysis-Report.html
+
 - title: "Java's Emergency HTTPS Trust Fix: Why the October 21 Update Is Not the Finish Line"
   description: Oracle's eMudhra response moved from intermediate blocking to root removal. What CVE-2026-91403 and CVE-2026-114820 mean for Java teams.
   category: Vulnerability

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title description">
+  <title id="title">Weaponized Claude Code extension: developer trust and an attempted SSH backdoor</title>
+  <desc id="description">Editorial artwork on warm ivory paper. Claude Code typography sits beside an editor window with an injected loader and an SSH key, illustrating an attempted backdoor through a modified extension.</desc>
+
+  <rect width="640" height="360" fill="#f3eee3"/>
+  <path d="M376 0h264v360H376Z" fill="#e3e8df"/>
+  <circle cx="574" cy="72" r="124" fill="#ccd8ca"/>
+  <path d="M376 0v360" stroke="#263b34" stroke-opacity=".18"/>
+
+  <g font-family="Arial, Helvetica, sans-serif" fill="#203c34">
+    <text x="36" y="46" font-size="11" font-weight="700" letter-spacing="2.5">SEC BITES / FIELD NOTES</text>
+    <path d="M36 62h304" stroke="#203c34" stroke-width="2"/>
+    <text x="32" y="130" font-size="58" font-weight="700" letter-spacing="-2">CLAUDE</text>
+    <text x="34" y="178" font-size="48" font-weight="700" letter-spacing="-1">CODE</text>
+    <rect x="36" y="199" width="52" height="5" fill="#bb4935"/>
+    <text x="36" y="238" font-size="18">A trusted extension.</text>
+    <text x="36" y="264" font-size="18">An attempted SSH backdoor.</text>
+    <text x="36" y="322" font-size="10" font-weight="700" letter-spacing="1.8">CURSOR / EXTENSION / SUPPLY CHAIN</text>
+  </g>
+
+  <g transform="rotate(5 500 174)">
+    <rect x="402" y="78" width="202" height="186" rx="8" fill="#203c34" fill-opacity=".12" transform="translate(6 8)"/>
+    <rect x="402" y="78" width="202" height="186" rx="8" fill="#fffcf4" stroke="#203c34" stroke-width="2"/>
+    <path d="M402 108h202" stroke="#203c34" stroke-width="2"/>
+    <g fill="#203c34">
+      <circle cx="418" cy="93" r="3"/>
+      <circle cx="430" cy="93" r="3"/>
+      <circle cx="442" cy="93" r="3"/>
+    </g>
+    <rect x="414" y="122" width="178" height="32" fill="#bb4935"/>
+    <text x="503" y="143" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#fffcf4">INJECTED LOADER</text>
+    <g fill="none" stroke="#203c34" stroke-width="2">
+      <path d="m432 176-10 9 10 9m18-18 10 9-10 9m-6-21-7 24"/>
+      <path d="M476 178h98m-98 14h76" stroke-opacity=".35"/>
+      <circle cx="441" cy="230" r="11"/>
+      <path d="M452 230h63m-8 0v12m-12-12v9"/>
+    </g>
+  </g>
+
+  <path d="M408 310h196" stroke="#203c34" stroke-width="2"/>
+  <text x="604" y="329" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="1" fill="#203c34">TRUST / VERIFY</text>
+</svg>
