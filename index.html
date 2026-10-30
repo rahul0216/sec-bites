@@ -7,15 +7,17 @@ description: Independent cybersecurity research, vulnerability analysis, and pra
 
 <main id="main-content">
   <section class="intro" aria-labelledby="intro-title">
-    <p class="kicker">Security research / Detection engineering</p>
-    <h1 id="intro-title">Security Research Field Notes</h1>
-    <p class="intro-copy">Independent analysis of threat actors, vulnerabilities, attack techniques, ransomware operations, adversary tooling and detection opportunities. Each report turns public evidence into practical guidance for security teams.</p>
+    <h1 id="intro-title">Security research<br>field notes.</h1>
+    <div class="intro-bottom">
+      <p class="intro-copy">Independent threat analysis.<br>Practical guidance for the people defending.</p>
+      <a class="intro-action" href="{{ '/#research' | relative_url }}">Explore research</a>
+    </div>
   </section>
 
   <section class="research" id="research" aria-labelledby="research-title">
     <div class="section-header">
       <h2 id="research-title">Research archive</h2>
-      <p id="research-count">{{ site.data.articles | size }} reports</p>
+      <p id="research-count" role="status" aria-live="polite" aria-atomic="true">{{ site.data.articles | size }} reports</p>
     </div>
 
     {% assign categories = site.data.articles | map: "category" | uniq | sort %}
@@ -38,7 +40,6 @@ description: Independent cybersecurity research, vulnerability analysis, and pra
     <div class="article-list">
       {% for article in site.data.articles %}
         <article class="article-card" data-category="{{ article.category | slugify }}" data-search="{{ article.title | append: ' ' | append: article.description | append: ' ' | append: article.category | downcase | escape }}">
-          <a href="{{ article.url | relative_url }}" aria-label="Read {{ article.title }}">
             {% if article.image %}
               <div class="article-preview" aria-hidden="true">
                 <img src="{{ article.image | relative_url }}" alt="" loading="lazy" width="640" height="360">
@@ -50,11 +51,13 @@ description: Independent cybersecurity research, vulnerability analysis, and pra
                 <time datetime="{{ article.date | date: '%Y-%m-%d' }}">{{ article.date | date: "%d %b %Y" }}</time>
                 <span>{{ article.read_time }} min read</span>
               </div>
-              <h3>{{ article.title }}</h3>
-              <p>{{ article.description }}</p>
-              <span class="read-link">Read report <span aria-hidden="true">&rarr;</span></span>
+              <a class="article-title-link" href="{{ article.url | relative_url }}" aria-label="Read {{ article.title }}"><h3>{{ article.title }}</h3></a>
+              <details class="research-summary">
+                <summary>Research summary</summary>
+                <p>{{ article.description }}</p>
+              </details>
+              <span class="read-link">Read report</span>
             </div>
-          </a>
         </article>
       {% endfor %}
     </div>
@@ -68,7 +71,11 @@ description: Independent cybersecurity research, vulnerability analysis, and pra
 
   <section class="about" id="about" aria-labelledby="about-title">
     <h2 id="about-title">About Sec Bites</h2>
-    <p>Sec Bites publishes evidence-backed security research with clear confidence boundaries. Reports prioritize durable behaviors over short-lived indicators and include hypotheses that defenders can adapt to their own environments.</p>
+    <div class="about-copy">
+      <p class="about-statement">Evidence over assumptions.</p>
+      <p>Sec Bites publishes evidence-backed security research with clear confidence boundaries. Reports prioritize durable behaviors over short-lived indicators and include hypotheses that defenders can adapt to their own environments.</p>
+      <p>Independent analysis of threat actors, vulnerabilities, attack techniques, ransomware operations, adversary tooling and detection opportunities. Each report turns public evidence into practical guidance for security teams.</p>
+    </div>
   </section>
 </main>
 
