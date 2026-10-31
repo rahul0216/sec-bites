@@ -1,3 +1,11 @@
+- title: SkyW4lker Device Code Phishing Threat Research
+  description: Source-grounded analysis of SkyW4lker's protected-document lures, Microsoft 365 device authorization abuse, reported indicators, and defensive opportunities.
+  category: Phishing
+  date: 2026-10-31
+  read_time: 5
+  image: /docs/skyw4lker-campaign/preview.svg
+  url: /docs/skyw4lker-campaign/SkyW4lker-Device-Code-Phishing-Campaign-Research.html
+
 - title: "A Weaponized Claude Code Extension Turned Developer Trust Into an SSH Backdoor"
   description: "An analysis of the modified Claude Code extension distributed through Cursor's marketplace, its SSH implant, exposure limits, and defensive response."
   category: Supply-chain campaign
