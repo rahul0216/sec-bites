@@ -1,5 +1,5 @@
 - title: "Encrypted, but Still Exposed: The Lesson of Compaction Smuggling"
-  description: How a reported OpenAI API flaw turned conversation compaction into a path for protected reasoning disclosure, and why encryption alone was not enough.
+  description: Technical analysis of protected reasoning disclosure across OpenAI reasoning, compaction, and downstream model boundaries.
   category: AI security
   date: 2026-11-02
   read_time: 10
