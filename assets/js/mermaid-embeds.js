@@ -16,7 +16,7 @@ if (diagramBlocks.length > 0) {
       startOnLoad: false,
       securityLevel: "strict",
       theme: "base",
-      fontFamily: "Inter, ui-sans-serif, sans-serif",
+      fontFamily: getComputedStyle(document.documentElement).getPropertyValue("--font-label").trim(),
       flowchart: {
         htmlLabels: true,
         useMaxWidth: true,

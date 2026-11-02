@@ -9,12 +9,12 @@
 /* Hallmark · hero-review: fix · 3 findings · 3 resolved: tracking eased, mobile nav gets its own row, dark accent-ink corrected */
 /* Hallmark · finish-review: subagent · ship · 0 defects · gap: none; summary disclosures intentionally trade immediate excerpts for a scannable index */
 /* Hallmark · sweep: light+dark · 0 FAIL · 0 open REFLEX · waived 59 · dismissed 77 · preservation note 58: 89 words near archive end */
+/* Typography refinement: Albert Sans headings and labels; Source Serif 4 reading text; existing layout and palette preserved. */
 @import url("./tokens.css");
 @import url("./base.css");
 
 html { scroll-behavior: smooth; }
-body { font-size: 18px; font-optical-sizing: auto; }
-h1, h2, h3 { font-variation-settings: "wdth" 75, "opsz" 96; }
+body { font-size: 18px; font-optical-sizing: auto; font-synthesis: none; }
 a { text-decoration-color: var(--color-rule-2); }
 a:hover { text-decoration-color: var(--accent); }
 a:active, button:active { transform: translateY(1px); }
@@ -47,7 +47,6 @@ button, input, select { font-family: var(--font-label); }
 }
 .wordmark {
   font-family: var(--font-display);
-  font-variation-settings: "wdth" 75, "opsz" 48;
   font-size: 2rem;
   font-weight: var(--display-weight);
   letter-spacing: -0.02em;
@@ -87,9 +86,9 @@ button, input, select { font-family: var(--font-label); }
 .intro { padding-block: var(--space-2xl); }
 .intro h1 {
   max-width: 15ch;
-  font-size: clamp(3.4rem, 8.5vw, 8rem);
+  font-size: clamp(3.4rem, 7vw, 6.5rem);
   letter-spacing: var(--tracking-display);
-  line-height: 0.98;
+  line-height: 1.05;
 }
 .intro-bottom {
   display: flex;
@@ -172,7 +171,7 @@ button, input, select { font-family: var(--font-label); }
 }
 .article-meta span:first-child { color: var(--accent); }
 .article-meta time { padding-left: var(--space-md); border-left: 1px solid var(--line); }
-.article-card h3 { max-width: 32ch; font-size: clamp(1.6rem, 2.6vw, 2.4rem); line-height: 1.12; }
+.article-card h3 { max-width: 32ch; font-size: clamp(1.6rem, 2.6vw, 2.4rem); line-height: 1.18; }
 .article-title-link { display: block; text-decoration: none; }
 .article-title-link::after { position: absolute; inset: 0; content: ""; }
 .article-card:has(a:focus-visible) { outline: 2px solid var(--color-focus); outline-offset: 4px; }
@@ -226,9 +225,9 @@ button, input, select { font-family: var(--font-label); }
 .article-header { border-bottom: var(--rule-heavy) solid var(--text); padding-bottom: var(--space-xl); margin-bottom: var(--space-2xl); }
 .back-link { font: 500 var(--text-sm)/1.5 var(--font-label); }
 .article-byline { display: flex; flex-wrap: wrap; gap: var(--space-md); margin-block: var(--space-xl) var(--space-lg); color: var(--muted); font: 500 var(--text-sm)/1.5 var(--font-label); }
-.article-header h1 { font-size: var(--text-display-s); line-height: 1.08; }
+.article-header h1 { font-size: var(--text-display-s); line-height: 1.12; }
 .article-description { max-width: 65ch; margin-top: var(--space-lg); color: var(--article-text); font-size: var(--text-lead); }
-.article-content { color: var(--article-text); overflow-wrap: break-word; }
+.article-content { color: var(--article-text); line-height: 1.65; overflow-wrap: break-word; }
 .article-content h2, .article-content h3, .article-content h4 { color: var(--text); scroll-margin-top: var(--space-xl); }
 .article-content h2 { margin-block: var(--space-2xl) var(--space-lg); font-size: 2.25rem; }
 .article-content h3 { margin-block: var(--space-xl) var(--space-md); font-size: 1.6rem; }
@@ -281,6 +280,6 @@ button, input, select { font-family: var(--font-label); }
   .pagination button { padding-inline: var(--space-xs); }
   .about { padding-block: var(--space-xl) var(--space-2xl); }
   .article-page { padding-top: var(--space-xl); }
-  .article-header h1 { font-size: 2.4rem; }
+  .article-header h1 { font-size: clamp(2rem, 7vw, 2.4rem); }
   .article-content pre { padding: var(--space-md); }
 }
