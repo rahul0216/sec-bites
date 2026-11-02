@@ -13,10 +13,10 @@
   --color-ink: oklch(16% 0.012 280); --color-ink-2: oklch(29% 0.011 280); --color-muted: oklch(48% 0.010 75);
   --color-rule: oklch(85% 0.009 85); --color-rule-2: oklch(64% 0.010 80);
   --color-accent: #b23a2a; --color-accent-ink: oklch(98% 0.005 88); --color-focus: #b23a2a;
-  --font-display: "Bricolage Grotesque", ui-sans-serif, sans-serif; --font-body: "Source Serif 4", ui-serif, Georgia, serif;
+  --font-display: "Albert Sans", ui-sans-serif, system-ui, sans-serif; --font-body: "Source Serif 4", ui-serif, Georgia, serif;
   --radius-card: 0; --radius-pill: 0; --rule-hair: 1px; --rule-heavy: 4px; --shadow-card: none;
-  --tracking-display: -0.012em; --display-weight: 800;
-  --font-label: "Bricolage Grotesque", ui-sans-serif, sans-serif;
+  --tracking-display: -0.025em; --display-weight: 700;
+  --font-label: var(--font-display);
   --font-code: "Cascadia Code", Consolas, monospace;
   --background: var(--color-paper); --surface: var(--color-paper-2); --surface-subtle: var(--color-paper-3);
   --text: var(--color-ink); --article-text: var(--color-ink-2); --muted: var(--color-muted);

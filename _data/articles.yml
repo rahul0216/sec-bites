@@ -1,3 +1,11 @@
+- title: "Encrypted, but Still Exposed: The Lesson of Compaction Smuggling"
+  description: How a reported OpenAI API flaw turned conversation compaction into a path for protected reasoning disclosure, and why encryption alone was not enough.
+  category: AI security
+  date: 2026-11-02
+  read_time: 10
+  image: /docs/compaction-smuggling/preview.svg
+  url: /docs/compaction-smuggling/compaction-smuggling-vuln-analysis.html
+
 - title: SkyW4lker Device Code Phishing Threat Research
   description: Source-grounded analysis of SkyW4lker's protected-document lures, Microsoft 365 device authorization abuse, reported indicators, and defensive opportunities.
   category: Phishing
