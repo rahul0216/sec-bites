@@ -1,3 +1,11 @@
+- title: "EchoLeak: When the Phishing Target Is Your AI Assistant"
+  description: "How CVE-2025-32711 exposed a trust-boundary failure in Microsoft 365 Copilot, and what enterprises can learn from the now-mitigated attack."
+  category: AI security
+  date: 2026-11-03
+  read_time: 10
+  image: /docs/echoleak-vulnerability/preview.svg
+  url: /docs/echoleak-vulnerability/EchoLeak-Vulnerability-Report.html
+
 - title: "Encrypted, but Still Exposed: The Lesson of Compaction Smuggling"
   description: Technical analysis of protected reasoning disclosure across OpenAI reasoning, compaction, and downstream model boundaries.
   category: AI security
