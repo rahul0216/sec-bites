@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-labelledby="title description">
+  <title id="title">CyberStrikeAI Windows domain compromise</title>
+  <desc id="description">A teal AI controller on the attacker's side directs an implant toward illustrated Windows workstations and a domain server, marked with orange compromise warnings.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#101e32"/>
+      <stop offset="1" stop-color="#203954"/>
+    </linearGradient>
+    <linearGradient id="controller" x2="0" y2="1">
+      <stop stop-color="#94e6d7"/>
+      <stop offset="1" stop-color="#42a99f"/>
+    </linearGradient>
+    <pattern id="stars" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#9bb6d0" opacity=".16"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="360" fill="url(#background)"/>
+  <rect width="640" height="360" fill="url(#stars)"/>
+  <circle cx="152" cy="215" r="103" fill="#67d9c8" opacity=".05"/>
+  <circle cx="491" cy="224" r="119" fill="#ffac78" opacity=".05"/>
+  <text x="32" y="32" fill="#8ddfce" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="700" letter-spacing="2">SEC BITES / THREAT RESEARCH</text>
+  <text x="32" y="76" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="36" font-weight="800" letter-spacing="-1">CyberStrikeAI</text>
+  <text x="32" y="101" fill="#b6c9de" font-family="Arial,Helvetica,sans-serif" font-size="14">AI-assisted Windows domain compromise</text>
+  <path d="M327 127v177" stroke="#7893af" stroke-dasharray="4 7" opacity=".5"/>
+  <g fill="#080f1c" opacity=".45">
+    <ellipse cx="157" cy="280" rx="83" ry="15"/>
+    <ellipse cx="475" cy="284" rx="119" ry="16"/>
+  </g>
+  <g stroke="#10283b" stroke-width="3" stroke-linejoin="round">
+    <path d="M107 235q50-29 100 0l10 32q-60 19-120 0Z" fill="url(#controller)"/>
+    <rect x="146" y="215" width="23" height="20" rx="5" fill="#42a99f"/>
+    <path d="M152 147v-15" stroke="#8ddfce"/>
+    <circle cx="152" cy="129" r="6" fill="#8ddfce"/>
+    <rect x="86" y="170" width="19" height="35" rx="8" fill="#42a99f"/>
+    <rect x="201" y="170" width="19" height="35" rx="8" fill="#42a99f"/>
+    <rect x="100" y="148" width="105" height="73" rx="22" fill="url(#controller)"/>
+    <rect x="113" y="162" width="79" height="43" rx="13" fill="#142c40"/>
+    <path d="M128 180h12m25 0h12" stroke="#9bf3dd" stroke-width="5" stroke-linecap="round"/>
+    <path d="M143 192h19" stroke="#9bf3dd" stroke-width="2" stroke-linecap="round"/>
+    <path d="M111 248h92" stroke="#c5fff0" stroke-width="2" opacity=".7"/>
+  </g>
+  <path d="M223 185h39m47 0h63" fill="none" stroke="#ffad7d" stroke-width="3" stroke-dasharray="5 5"/>
+  <path d="m364 178 9 7-9 7" fill="none" stroke="#ffad7d" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="262" y="165" width="47" height="40" rx="9" fill="#243b52" stroke="#ffad7d" stroke-width="2"/>
+  <path d="m273 178 6 7-6 7m12 0h12" fill="none" stroke="#ffad7d" stroke-width="2.5"/>
+  <text x="286" y="224" text-anchor="middle" fill="#ffbe98" font-family="monospace" font-size="10">IMPLANT</text>
+  <g stroke="#93abc3" stroke-width="2" stroke-linejoin="round">
+    <path d="m508 145 24-13 58 18-24 14Z" fill="#6b8199"/>
+    <path d="m566 164 24-14v113l-24 15Z" fill="#263e56"/>
+    <path d="m508 145 58 19v114l-58-20Z" fill="#405973"/>
+    <path d="m518 169 37 12v16l-37-12Zm0 28 37 12v16l-37-12Zm0 28 37 12v16l-37-12Z" fill="#152b40"/>
+    <path d="M451 225v36h57" fill="none" stroke="#ffad7d" stroke-dasharray="4 4"/>
+    <path d="m384 194 99 16v64l-99-16Z" fill="#405973"/>
+    <path d="m392 203 83 13v48l-83-13Z" fill="#13263a"/>
+    <path d="M433 266v15m-21 2 43 7-14 5-43-7Z" fill="#6b8199"/>
+    <path d="m365 282 103 16 19-8-103-16Z" fill="#263e56"/>
+  </g>
+  <g fill="#84a9ce">
+    <path d="m421 219 11 1v11l-11-1Zm14 2 15 2v11l-15-2Zm-14 12 11 1v11l-11-2Zm14 2 15 2v12l-15-3Z"/>
+  </g>
+  <g fill="#ffad7d">
+    <circle cx="523" cy="179" r="2"/>
+    <circle cx="523" cy="207" r="2"/>
+    <circle cx="523" cy="235" r="2"/>
+    <path d="m481 167 15 26h-30Z"/>
+    <path d="m571 232 15 26h-30Z"/>
+  </g>
+  <path d="M481 175v8m0 3v2m90 52v8m0 3v2" stroke="#192b40" stroke-width="2.5"/>
+  <text x="152" y="305" text-anchor="middle" fill="#8ddfce" font-family="monospace" font-size="10" letter-spacing="1">ATTACKER-SIDE AI</text>
+  <text x="481" y="317" text-anchor="middle" fill="#ffbe98" font-family="monospace" font-size="10" letter-spacing="1">WINDOWS SYSTEMS</text>
+  <path d="M32 330h576" stroke="#718ca8" opacity=".35"/>
+  <text x="32" y="349" fill="#b6c9de" font-family="Arial,Helvetica,sans-serif" font-size="10">Reported education-sector intrusions</text>
+  <text x="608" y="349" text-anchor="end" fill="#b6c9de" font-family="monospace" font-size="10">SEC BITES</text>
+</svg>

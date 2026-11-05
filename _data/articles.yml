@@ -1,3 +1,11 @@
+- title: CyberStrikeAI Windows domain compromise threat research
+  description: Sourced assessment of reported education-sector intrusions, indicators, techniques, and defensive priorities.
+  category: AI security
+  date: 2026-11-05
+  read_time: 10
+  image: /docs/cyberstrikeai-campaign/preview.svg
+  url: /docs/cyberstrikeai-campaign/cyberstrikeai-campaign-threat-research.html
+
 - title: "EchoLeak: When the Phishing Target Is Your AI Assistant"
   description: "How CVE-2025-32711 exposed a trust-boundary failure in Microsoft 365 Copilot, and what enterprises can learn from the now-mitigated attack."
   category: AI security
