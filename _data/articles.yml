@@ -1,3 +1,11 @@
+- title: "SSHole: CVE-2026-123158 Threat Research Report"
+  description: "Threat analysis of the OpenSSH authentication bypass on musl-based Linux, including exploitation, affected configurations, patches, investigation, and detection opportunities."
+  category: Vulnerability
+  date: 2026-11-11
+  read_time: 16
+  image: /docs/sshole-vulnerability/preview.svg
+  url: /docs/sshole-vulnerability/SSHole-CVE-2026-123158-Threat-Research-Report.html
+
 - title: CyberStrikeAI Windows domain compromise threat research
   description: Sourced assessment of reported education-sector intrusions, indicators, techniques, and defensive priorities.
   category: AI security
