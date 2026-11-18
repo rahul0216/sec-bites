@@ -1,3 +1,11 @@
+- title: "Java4Shell: When Java's Base64 Fast Path Becomes a Route to Remote Code Execution"
+  description: "Analysis of CVE-2026-114938, covering runtime and hardware prerequisites, exploitation status, remediation, and detection opportunities."
+  category: Vulnerability
+  date: 2026-11-18
+  read_time: 8
+  image: /docs/java4shell-vulnerability/preview.svg
+  url: /docs/java4shell-vulnerability/Java4Shell-CVE-2026-114938-Vul-Research.html
+
 - title: "SSHole: CVE-2026-123158 Threat Research Report"
   description: "Threat analysis of the OpenSSH authentication bypass on musl-based Linux, including exploitation, affected configurations, patches, investigation, and detection opportunities."
   category: Vulnerability
