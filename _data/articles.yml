@@ -1,3 +1,11 @@
+- title: "ARTEX AI Pentesting Tool Threat Research"
+  description: "Technical assessment of ARTEX architecture, observed threat actor use, cloud and identity attack paths, forensic artifacts, and defensive priorities."
+  category: AI security
+  date: 2026-11-24
+  read_time: 20
+  image: /docs/artex-ai-tool/preview.svg
+  url: /docs/artex-ai-tool/ARTEX-Threat-Research-Report.html
+
 - title: "Java4Shell: When Java's Base64 Fast Path Becomes a Route to Remote Code Execution"
   description: "Analysis of CVE-2026-114938, covering runtime and hardware prerequisites, exploitation status, remediation, and detection opportunities."
   category: Vulnerability
